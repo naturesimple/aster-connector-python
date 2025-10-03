@@ -1,4 +1,5 @@
 # aster-connector-python
+[English](README.md) | [中文文档](README.zh.md)
 [![Python 3.6](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -43,6 +44,14 @@ response = client.new_order(**params)
 print(response)
 ```
 Please find `examples` folder to check for more endpoints.
+
+### Trading App Example
+
+The [`examples/trading_app`](examples/trading_app) folder contains a reference implementation of a
+FastAPI service that can run on a Google Cloud VM. It exposes account balances, position data and
+order placement capabilities for the Aster exchange. A companion command line client makes it easy
+to retrieve that information from a local workstation and forward order instructions back to the
+VM. See the example README for setup and usage details.
 
 ### Base URL
 `https://fapi.asterdex.com`
